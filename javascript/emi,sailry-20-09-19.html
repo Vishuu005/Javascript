@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<script>
+		function calc()
+		{
+			var sal=parseInt(document.getElementById("sal").value);
+			var da=(sal)*0.12;
+			var hra=(sal)*0.25;
+			var gr=sal+da+hra;
+			var pf=gr*0.115;
+			var ns=gr-pf;
+			var od=ns/30;
+			var oh=od/8;
+			document.getElementById("da").value=da;
+			document.getElementById("hra").value=hra;
+			document.getElementById("gr").value=gr;
+			document.getElementById("pf").value=pf;
+			document.getElementById("ns").value=ns;
+			document.getElementById("od").value=od;
+			document.getElementById("oh").value=oh;
+		}
+	</script>
+</head>
+<body>
+<center>
+	<table border="3" width="50%" cellpadding="10" cellspacing="0">
+		<tr>
+			<th colspan="2"><span style="font-size:large">SALARY PAYSLIP</span></th>
+		</tr>
+		<tr>
+			<th>Empoloyee ID</th>
+			<th><input type="text" id="emid"></th>
+		</tr>
+		<tr>
+			<th>Employee name</th>
+			<th><input type="text" id="empname"></th>
+		</tr>
+		<tr>
+			<th>Salary</th>
+			<th><input type="text" id="sal"></th>
+		</tr>
+		<tr>
+			<th colspan="2"><input type="button" value="CALCULATION" onclick="calc()" style="font-size:large";background-color:#ACC6CC></th>
+		</tr>
+		<tr>
+			<th>DA @12%</th>
+			<th><input type="text" id="da" onclick="calc()"></th>
+		</tr>
+		<tr>
+			<th>HRA@25%</th>
+			<th><input type="text" id="hra" onclick="calc()"></th>
+		</tr>
+		<th>GR</th>
+			<th><input type="text" id="gr" onclick="calc()"></th>
+		</tr>
+		<th>PF@11.5%</th>
+			<th><input type="text" id="pf" onclick="calc()"></th>
+		</tr>
+		<th>NET SALARY</th>
+			<th><input type="text" id="ns" onclick="calc()"></th>
+		</tr>
+		<th>ONE DAY</th>
+			<th><input type="text" id="od" onclick="calc()"></th>
+		</tr>
+		<th>ONE hour</th>
+			<th><input type="text" id="oh" onclick="calc()"></th>
+		</tr>
+	</table></center>
+</body>
+</html>

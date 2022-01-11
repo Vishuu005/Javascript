@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<script>
+		function add()
+		{
+			var a=parseInt(document.getElementById("a1").value);
+			var b=parseInt(document.getElementById("a2").value);
+			var c=a+b;
+			document.getElementById("a3").value=c;
+		}
+		function sub()
+		{
+			var a=parseInt(document.getElementById("a1").value);
+			var b=parseInt(document.getElementById("a2").value);
+			var c=a-b;
+			document.getElementById("a3").value=c;
+		}
+		function mult()
+		{
+			var a=parseInt(document.getElementById("a1").value);
+			var b=parseInt(document.getElementById("a2").value);
+			var c=a*b;
+			document.getElementById("a3").value=c;
+		}
+		function div()
+		{
+			var a=parseInt(document.getElementById("a1").value);
+			var b=parseInt(document.getElementById("a2").value);
+			var c=a/b;
+			document.getElementById("a3").value=c;
+		}
+		
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>first no.</th>
+			<th><input type="text" id="a1"></th>
+		</tr>
+		<tr>
+			<th>second no.</th>
+			<th> <input type="text" id="a2"></th>
+		</tr>
+		<tr>
+			<th>result</th>
+			<th><input type="text" id="a3"></th>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="button" value="Add"onclick="add()">
+				<input type="button" value="sub"onclick="sub()">
+				<input type="button" value="mult"onclick="mult()">
+				<input type="button" value="div"onclick="div()">
+			
+</body>
+</html>

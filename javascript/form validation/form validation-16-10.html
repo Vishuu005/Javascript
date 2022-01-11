@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>validation</title>
+	<script>
+	function aa()
+		{
+			var x=document.forms["myforms"]["a"].value;
+			if(x=="")
+			{
+				alert("plz fill name");
+			}
+		
+			
+
+		}
+	</script>	
+</head>
+<body>
+<form name="myforms" action=" "method="post" onsubmit="aa()">
+Name:<input type="text"  title="plz fill in the blanks" name="a">
+
+<button>ok</button>
+</form>
+</body>
+</html>

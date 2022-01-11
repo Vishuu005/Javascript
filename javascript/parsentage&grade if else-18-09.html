@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>parsentage</title>
+	<script>
+		function calc()
+		{
+			var a=parseInt(document.getElementById("a1").value);
+			var b=parseInt(document.getElementById("a2").value);
+			var c=parseInt(document.getElementById("a3").value);
+			var d=parseInt(document.getElementById("a4").value);
+			var e=parseInt(document.getElementById("a5").value);
+			var f=parseInt(document.getElementById("a6").value);
+			var total=a+b+c+d+e+f;
+			document.getElementById("a7").value=total;
+
+			var per=total/6;
+			document.getElementById("a8").value=per;
+
+			if(per<=100&&per>=90)
+			{
+				var grd="A+";
+
+				document.getElementById("a9").value=grd;
+			}
+			else if(per<90&&per>=80)
+			{
+				grd="A";
+				document.getElementById("a9").value=grd;
+			}
+			else if(per<80&&per>=70)
+			{
+				grd="B";
+				document.getElementById("a9").value=grd;
+
+			}
+			else if(per<70&&per>=60)
+			{
+				grd="C";
+				document.getElementById("a9").value=grd;
+
+			}
+
+			else if(per<60&&per>=50)
+			{
+				grd="D";
+				document.getElementById("a9").value=grd;
+			}
+			else if(per<50&&per>=35)
+			{
+				grd="E";
+				document.getElementById("a9").value=grd;
+			}
+			else
+			{
+				grd="fail";
+				document.getElementById("a9").value=grd;
+			}
+
+
+			
+
+
+		}
+	</script>
+</head>
+<body>
+<center>
+	<table border="2" width="50%" cellpadding="10" cellspacing="0">
+		<tr>
+			<th colspan="2"><span style="font size: large">MARKSHEET</span></th>
+		</tr>
+		<tr>
+			<th>Hindi</th>
+			<th><input type="text" id="a1" style="font size:large"></th>
+		</tr>
+		<th>Math</th>
+			<th><input type="text" id="a2" style="font size:large"></th>
+		</tr>
+		<th>English</th>
+			<th><input type="text" id="a3" style="font size:large"></th>
+		</tr>
+		<th>Science</th>
+			<th><input type="text" id="a4" style="font size:large"></th>
+		</tr>
+		<th>SST</th>
+			<th><input type="text" id="a5" style="font size:large"></th>
+		</tr>
+		<th>Computer</th>
+			<th><input type="text" id="a6" style="font size:large"></th>
+		</tr>
+
+		<tr>
+			<th colspan="2"><input type="button" value="CALCULATE" style="font size:large" onclick="calc()"></th>
+		</tr>
+		<tr>
+			<th>Total</th>
+			<th><input type="text"  style="font size:large"  id="a7"></th>
+		</tr>
+		<tr>
+			<th>Percentage</th>
+			<th><input type="text"  id="a8"></th>
+		</tr>
+		<tr>
+			<th>Grade</th>
+			<th><input type="text"   id="a9"></th>
+		</tr></table></center>
+		
+		
+		
+		
+		
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sum,avg</title>
+	<script>
+		function ok()
+		{
+			var a=parseInt(document.getElementById("a1").value);
+			var b=parseInt(document.getElementById("b1").value);
+			var c=parseInt(document.getElementById("c1").value);
+			var sum=a+b+c;
+			var avg=sum/3;
+			document.getElementById("s1").value=sum;
+			document.getElementById("a2").value=avg;
+
+		}
+	</script>
+</head>
+<body>
+<table border="2">
+	<tr>
+		<th>first no</th>
+		<th><input type="text" id="a1"></th>
+	</tr>
+	<tr>
+		<th>second no</th>
+		<th><input type="text" id="b1"></th>
+	</tr>
+	<tr>
+		<th>third no</th>
+		<th><input type="text" id="c1"></th>
+	</tr>
+	<tr>
+		<th>sum</th>
+		<th><input type="text" id="s1"></th>
+	</tr>
+	<tr>
+		<th>average</th>
+		<th><input type="text" id="a2"></th>
+	</tr>
+	<tr>
+		<th colspan="2"><input type="button" value="click"onclick="ok()"></th>
+		
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMI</title>
+	<script>
+	function EMI()
+	{
+		var p=parseInt(document.getElementById("a1").value);
+			var r=parseInt(document.getElementById("a2").value);
+			var n=parseInt(document.getElementById("a3").value);
+			var EMI=p*r(1+r)^n/(1+r)^n-1;
+			document.getElementById("a4").value=EMI;
+		}
+	</script>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<th>income</th>
+		<th><input type="text" id="a1" ></th>
+	</tr>
+	<tr>
+		<th>interest</th>
+		<th><input type="text" id="a2"></th>
+	</tr>
+	
+	<tr>
+		<th>year</th>
+		<th><input type="text" id="a3" ></th>
+	</tr>
+	<tr>
+		<th>EMI</th>
+		<th><input type="text" id="a4"></th>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" value="Calculate" onclick="EMI()"></td>
+	</tr></table>		
+</body>
+</html>

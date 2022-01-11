@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+	<script>
+		function fact()
+		{
+		var n=parseInt(document.getElementById("a1").value);
+		var i;
+		var f=1;
+		
+		document.getElementById("a2").value=f;
+		for(i=n;i>=1;i--)
+		{
+			f=f*i;
+			document.getElementById("a2").value=f;
+		}}
+		
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>enter the no</th>
+
+<th><input type="text" id="a1"></th>
+</tr>
+<tr>
+	<th>result</th>
+
+<th><input type="text" id="a2"></th>
+</tr>
+<tr>
+<td><input type="button" value="factorial"onclick="fact()"></td>
+</body>
+</html>

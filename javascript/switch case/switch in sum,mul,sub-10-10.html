@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+	var a=10;
+	var b=6;
+	var c=3;
+	switch(c)
+	{
+		case 1:
+		c=a+b;
+		break;
+		case 2:
+		c=a-b;
+		break;
+		case 3:
+		c=a*b;
+		break;
+		case 4:
+		c=a/b;
+		break;
+		default:
+		c="invalid";
+		break;
+	}
+	document.getElementById("demo").innerHTML=c;
+</script>
+</body>
+</html>
